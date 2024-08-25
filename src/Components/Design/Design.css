@@ -1,0 +1,102 @@
+.design-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #000000;
+    width: 100%;
+    border-bottom: 2px solid gold;
+}
+
+.design-container h1 {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.design-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    gap: 20px;
+}
+
+.design-item {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.design-card {
+    background: transparent;
+    border-radius: 8px;
+    border: 2px solid gold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 350px;
+    height: 350px;
+    margin-bottom: 20px;
+}
+
+.design-card-img {
+    width: 100%;
+    height: 75%; 
+    position: relative;
+    overflow: hidden;
+}
+
+.design-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.design-card-img-default {
+    opacity: 1;
+}
+
+.design-card-img-hover {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.design-card:hover .design-card-img-default {
+    opacity: 0;
+}
+
+.design-card:hover .design-card-img-hover {
+    opacity: 1;
+}
+
+.design-card-desp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #000000;
+    color: #fff;
+    border-top: 2px solid gold;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+    height: 25%; 
+}
+
+.design-card-desp h2 {
+    font-size: 1.5rem;
+    color: #fff;
+    margin: 0;
+}

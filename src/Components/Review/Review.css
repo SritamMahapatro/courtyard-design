@@ -1,0 +1,100 @@
+.reviews {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #000; /* Black background for the section */
+    color: gold;
+    border-bottom: 2px solid gold;
+}
+
+.review-cards {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping of cards to the next line */
+    justify-content: space-between;
+    width: 90%; /* Adjusted to accommodate larger review cards */
+    height: fit-content;
+    margin-top: 30px;
+    text-align: left; /* Aligns text to the left */
+}
+
+.review-card {
+    background-color: #000; /* Black background for each card */
+    color: #fff; /* White text color */
+    padding: 20px; /* Reduced padding */
+    border-radius: 8px;
+    border: 2px solid gold; /* Gold lining */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: calc(33.333% - 20px); /* Adjusted width to fit 3 cards per row with spacing */
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation */
+    margin: 10px; /* Added margin for spacing */
+    min-height: 400px; /* Increased minimum height */
+}
+
+.review-card:hover {
+    transform: translateY(-10px); /* Elevates the card on hover */
+    box-shadow: 0 6px 12px rgba(255, 215, 0, 0.7); /* Gold shadow on hover */
+}
+
+.review-card h3 {
+    margin-top: 0;
+    margin-bottom: 8px; /* Reduced bottom margin */
+    font-size: 1.25rem; /* Decreased font size for names */
+    color: #fff; /* White color for the name */
+}
+
+.review-card p {
+    margin: 0;
+    font-size: 0.875rem; /* Decreased font size for the review text */
+    color: #ddd; /* Lighter white for the review text */
+}
+
+.review-rating {
+    display: flex;
+    margin-top: 8px; /* Reduced top margin */
+    font-size: 20px; /* Decreased font size for stars */
+    color: #f39c12; /* Gold color for stars */
+}
+
+.review-card .review-name {
+    position: absolute;
+    bottom: 20px; /* Reduced bottom space */
+    right: 10px;
+    font-size: 0.875rem; /* Decreased font size for the name */
+    color: #fff; /* White color for the name */
+}
+
+.client-label {
+    font-size: 0.75rem; /* Smaller font size for client label */
+    color: #f39c12; /* Gold color for client label */
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 5px; /* Added gap between page buttons */
+    flex-wrap: wrap; /* Allows wrapping to the next line */
+}
+
+.page-button {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #f39c12;
+    padding: 8px 12px; /* Reduced padding */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.page-button:hover {
+    background-color: #f39c12;
+    color: #000;
+}
+
+.page-button.active {
+    background-color: #f39c12;
+    color: #000;
+}

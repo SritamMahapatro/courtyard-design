@@ -1,0 +1,134 @@
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: url('../Assets/Slide/slide1.png') no-repeat center center, 
+                url('../Assets/Slide/slide2.png') no-repeat center center, 
+                url('../Assets/Slide/slide3.png') no-repeat center center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-bottom: 2px solid gold;
+}
+
+.left, .right {
+    width: 45%;
+    padding: 20px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.left h1, .right h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.left button, .right button, .right input {
+    margin: 10px 0;
+    background-color: transparent;
+    color: white;
+    font-size: 1rem;
+}
+
+.left button, .right button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    display: block;
+    width: auto;
+    text-align: center;
+}
+
+.left button, .right button {
+    background-color: rgba(255, 215, 0, 0.2);
+    border: 1px solid rgba(255, 215, 0, 0.5);
+}
+
+.left button:hover, .right button:hover {
+    background-color: rgba(255, 215, 0, 0.3);
+    border-color: rgba(255, 215, 0, 0.7);
+    color: white;
+}
+
+.right .input-group {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.right .input-group input {
+    width: 48%;
+    margin-bottom: 10px;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 0.9rem;
+}
+
+.checkbox-container input {
+    margin-right: 10px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: transparent;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: white;
+}
+
+
+.left::after {
+    right: -15px;
+}
+
+.right input[type="text"], 
+.right input[type="email"], 
+.right input[type="number"],
+textarea {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    font-size: 1rem;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.right input[type="email"], 
+.right input[type="number"] {
+    width: 48%;
+    display: inline-block;
+}
+
+.right input[type="email"] {
+    margin-right: 4%;
+}
+
+.right input::placeholder, 
+textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.right input:focus, 
+textarea:focus {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-color: rgba(255, 255, 255, 0.7);
+    outline: none;
+}

@@ -1,0 +1,64 @@
+.courtyard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: url('../Assets/img/bg2.png') no-repeat center center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0);
+    color: #bab374;
+    position: relative;
+    z-index: 1;
+    border-bottom: 2px solid gold;
+    width: 100%;
+    min-height: 80vh;
+}
+
+.courtyard-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 2;
+}
+
+.courtyard-title {
+    font-size: 4rem;
+    color: yellow;
+    padding-bottom: 50px;
+    text-align: center;
+    position: relative;
+    z-index: 3;
+}
+
+.courtyard-content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: space-between;
+    gap: 20px;
+    text-align: left;
+    position: relative;
+    z-index: 3;
+    padding-bottom: 100px;
+}
+
+.courtyard-left, .courtyard-right {
+    flex: 1;
+    padding: 20px;
+    font-size: 1.4rem;
+    position: relative;
+    z-index: 3;
+}
+
+.courtyard-left {
+    margin-right: 10px;
+}
+
+.courtyard-right {
+    margin-left: 10px;
+}
