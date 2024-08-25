@@ -3,87 +3,100 @@
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    background-color: #000; /* Black background for the section */
+    background-color: #000;
     color: gold;
     border-bottom: 2px solid gold;
 }
 
+.reviews h1 {
+    font-size: 3rem;
+    background: linear-gradient(90deg, gold, #ffd700, #b8860b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
 .review-cards {
     display: flex;
-    flex-wrap: wrap; /* Allows wrapping of cards to the next line */
+    flex-wrap: wrap;
     justify-content: space-between;
-    width: 90%; /* Adjusted to accommodate larger review cards */
+    width: 90%;
     height: fit-content;
     margin-top: 30px;
-    text-align: left; /* Aligns text to the left */
+    text-align: left;
 }
 
 .review-card {
-    background-color: #000; /* Black background for each card */
-    color: #fff; /* White text color */
-    padding: 20px; /* Reduced padding */
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
     border-radius: 8px;
-    border: 2px solid gold; /* Gold lining */
+    border: 2px solid gold;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    width: calc(33.333% - 20px); /* Adjusted width to fit 3 cards per row with spacing */
+    width: calc(33.333% - 20px);
     position: relative;
     overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation */
-    margin: 10px; /* Added margin for spacing */
-    min-height: 400px; /* Increased minimum height */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 10px;
+    min-height: 400px;
 }
 
 .review-card:hover {
-    transform: translateY(-10px); /* Elevates the card on hover */
-    box-shadow: 0 6px 12px rgba(255, 215, 0, 0.7); /* Gold shadow on hover */
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(255, 215, 0, 0.7);
 }
 
 .review-card h3 {
     margin-top: 0;
-    margin-bottom: 8px; /* Reduced bottom margin */
-    font-size: 1.25rem; /* Decreased font size for names */
-    color: #fff; /* White color for the name */
+    margin-bottom: 8px;
+    font-size: 1.25rem;
+    color: #fff;
 }
 
 .review-card p {
     margin: 0;
-    font-size: 0.875rem; /* Decreased font size for the review text */
-    color: #ddd; /* Lighter white for the review text */
+    font-size: 0.875rem;
+    color: #ddd;
 }
 
 .review-rating {
     display: flex;
-    margin-top: 8px; /* Reduced top margin */
-    font-size: 20px; /* Decreased font size for stars */
-    color: #f39c12; /* Gold color for stars */
+    margin-top: 8px;
+    font-size: 20px;
+    color: #f39c12;
 }
 
 .review-card .review-name {
     position: absolute;
-    bottom: 20px; /* Reduced bottom space */
+    bottom: 20px;
     right: 10px;
-    font-size: 0.875rem; /* Decreased font size for the name */
-    color: #fff; /* White color for the name */
+    font-size: 0.875rem;
+    color: #fff;
 }
 
 .client-label {
-    font-size: 0.75rem; /* Smaller font size for client label */
-    color: #f39c12; /* Gold color for client label */
+    font-size: 0.75rem;
+    color: #f39c12;
 }
 
 .pagination {
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    gap: 5px; /* Added gap between page buttons */
-    flex-wrap: wrap; /* Allows wrapping to the next line */
+    gap: 5px;
+    flex-wrap: wrap;
 }
 
 .page-button {
     background-color: #333;
     color: #fff;
     border: 1px solid #f39c12;
-    padding: 8px 12px; /* Reduced padding */
+    padding: 8px 12px;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;

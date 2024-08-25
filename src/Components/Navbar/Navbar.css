@@ -34,10 +34,9 @@
   padding: 5px 20px;
 }
 
-/* Navbar Links */
 .nav-link {
   text-decoration: none;
-  color: white;
+  color: white !important; 
   font-size: 28px;
   font-weight: bold;
   margin-left: 20px;
@@ -45,8 +44,8 @@
 }
 
 .nav-link:hover {
-  color: rgb(255, 255, 0);
-  text-decoration: underline;
+  color: rgb(255, 255, 0) !important; 
+  text-decoration: underline !important;
 }
 
 /* Background Styles */

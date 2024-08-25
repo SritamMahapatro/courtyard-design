@@ -27,11 +27,13 @@
 
 .courtyard-title {
     font-size: 4rem;
-    color: yellow;
-    padding-bottom: 50px;
+    background: linear-gradient(90deg, gold, #ffd700, #b8860b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 50px;
     text-align: center;
-    position: relative;
     z-index: 3;
+    position: relative;
 }
 
 .courtyard-content {

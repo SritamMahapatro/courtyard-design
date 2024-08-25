@@ -3,12 +3,14 @@
     grid-template-columns: repeat(5, 1fr);
     gap: 20px;
     padding: 20px;
-    background: rgb(78, 76, 76);
+    background: black;
     color: white;
 }
 
 .footer-logo img {
-    max-width: 80%;
+    max-width: 100%;
+    height: auto;
+    padding: 10px;
 }
 
 .footer-newsletter, .footer-contact, .footer-social, .footer-credai {
@@ -19,6 +21,7 @@
 
 .footer-newsletter p, .footer-contact h3, .footer-social h3, .footer-credai p {
     margin-bottom: 10px;
+    color: white;
 }
 
 .footer-newsletter input, .footer-newsletter button {
@@ -55,18 +58,34 @@
 
 .contact-info img {
     margin-right: 10px;
-    max-width: 25px;
+    max-width: 30px;
+    background-color: white; 
+    padding: 5px; 
+    border-radius: 5px; 
 }
 
-.footer-social a {
-    margin: 0 10px;
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fooster-social-platform {
+    display: flex;
+    gap: 20px;
 }
 
 .footer-social img {
-    max-width: 30px;
+    max-width: 40px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
 }
 
+
+
 .footer-credai {
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -75,14 +94,19 @@
 .footer-credai-container {
     display: flex;
     flex-direction: column;
+    gap: 1.1rem;
     align-items: center;
 }
 
 .footer-credai img {
-    max-width: 40%;
+    max-width: 60%;
+    background-color: white; 
+    padding: 10px;
+    border-radius: 5px; 
 }
 
 .footer-bottom {
+    border-top: 1px solid gold;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -96,6 +120,9 @@
 }
 
 .footer-bottom img {
-    max-width: 60%;
+    max-width: 100%;
     height: auto;
+    background-color: white; 
+    padding: 10px; 
+    border-radius: 5px;
 }

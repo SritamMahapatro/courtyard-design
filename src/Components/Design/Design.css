@@ -10,7 +10,9 @@
 
 .design-container h1 {
     font-size: 3rem;
-    color: #fff;
+    background: linear-gradient(90deg, gold, #ffd700, #b8860b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     margin-bottom: 40px;
     text-align: center;
 }
@@ -49,7 +51,7 @@
 
 .design-card-img {
     width: 100%;
-    height: 75%; 
+    height: 75%;
     position: relative;
     overflow: hidden;
 }
@@ -92,7 +94,7 @@
     width: 100%;
     box-sizing: border-box;
     padding: 5px;
-    height: 25%; 
+    height: 25%;
 }
 
 .design-card-desp h2 {

@@ -35,7 +35,7 @@ function Review() {
 
   return (
     <div className="reviews">
-      <h2>What Our Clients Say</h2>
+      <h1>What Our Clients Say</h1>
       <div className="review-cards">
         {currentReviews.map((review, index) => (
           <div

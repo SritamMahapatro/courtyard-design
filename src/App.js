@@ -5,6 +5,7 @@ import Details from "./Components/Details/Details";
 import Courtyard from "./Components/Courtyard/Courtyard";
 import Design from "./Components/Design/Design";
 import Gallary from "./Components/Gallery/Gallary";
+import Lifestyle from "./Components/Lifstyle/Lifestyle";
 import Reviews from "./Components/Review/Review";
 import Contact from "./Components/Contact/Contact";
 import Footer from "./Components/Footer/Footer";
@@ -18,9 +19,10 @@ function App() {
         <Courtyard/>
         <Design />
         <Gallary />
-        <Reviews/>
-        <Contact/>
-        <Footer/>
+        <Lifestyle />
+        <Reviews />
+        <Contact />
+        <Footer />
     </div>
   );
 }

@@ -8,7 +8,7 @@
   padding: 0 20px;
   color: white;
   background-color: black;
-  border-bottom: 2px solid gold;
+  border-bottom: 1px solid gold;
 }
 
 .legacy-text-content {
@@ -20,8 +20,9 @@
 .legacy-h1 {
   font-size: 4rem;
   font-weight: bolder;
-  line-height: 0.1;
+  line-height: 0.5;
   text-align: left;
+  color: rgb(251, 157, 64);
 }
 
 .legacy-h2 {
@@ -38,6 +39,7 @@
   font-size: 28px;
   margin-top: 1rem;
   text-align: left;
+  color: rgb(252, 222, 193);
 }
 
 .legacy-quote p:last-of-type {

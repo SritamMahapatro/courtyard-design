@@ -39,14 +39,16 @@ const Footer = () => {
         </div>
         <div className="footer-social">
           <h3>FOLLOW US</h3>
-          <img src={instagramIcon} alt="Instagram Icon" />
+          <div className="fooster-social-platform">
+            <img src={instagramIcon} alt="Instagram Icon" />
           <img src={linkedinIcon} alt="LinkedIn Icon" />
           <img src={facebookIcon} alt="Facebook Icon" />
+          </div>
         </div>
         <div className="footer-credai">
           <div className="footer-credai-container">
+          <img src={yearsLogo} alt="35 Years Logo" />
             <img src={credaiLogo} alt="CREDAI Logo" />
-            <img src={yearsLogo} alt="35 Years Logo" />
           </div>
           <p>BENGALURU</p>
         </div>
