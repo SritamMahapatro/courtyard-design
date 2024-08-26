@@ -95,10 +95,12 @@
     box-sizing: border-box;
     padding: 5px;
     height: 25%;
+    text-decoration: none; /* Remove underline from text */
 }
 
 .design-card-desp h2 {
     font-size: 1.5rem;
     color: #fff;
     margin: 0;
+    text-decoration: none; /* Remove underline from text */
 }

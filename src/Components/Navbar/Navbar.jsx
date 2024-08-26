@@ -5,7 +5,12 @@ import logocourtyard from '../Assets/logo/logocourtyard.png';
 import backgroundleft from '../Assets/logo/background1.png';
 import backgroundright from '../Assets/logo/background2.png';
 
-const Navbar = () => {
+const Navbar = ({ legacyRef, courtyardRef, contactRef, footerRef }) => {
+
+  const scrollToSection = (ref) => {
+    ref.current.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <div className="nav-container">
       <div className="nav-background-container">
@@ -17,10 +22,10 @@ const Navbar = () => {
           <img src={dsrlogo} alt="Logo" className="nav-logo" />
         </div>
         <div className="nav-links-right">
-          <a href="#home" className="nav-link">Home</a>
-          <a href="#about" className="nav-link">About</a>
-          <a href="#contact" className="nav-link">Contact</a>
-          <a href="#enquire" className="nav-link">Enquire</a>
+          <button className="nav-link" onClick={() => scrollToSection(legacyRef)}>Home</button>
+          <button className="nav-link" onClick={() => scrollToSection(courtyardRef)}>About</button>
+          <button className="nav-link" onClick={() => scrollToSection(contactRef)}>Contact</button>
+          <button className="nav-link" onClick={() => scrollToSection(footerRef)}>Enquire</button>
         </div>
       </div>
       <div className="nav-main-logo">
